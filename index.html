@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Baloo+Da+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap');
+      </style>
+
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    
+<nav class="bg-purple-500 text-[27px] flex items-center px-3 font-['Roboto']">
+    <ul>
+        <li class="">MyTicTacToe.com</li>
+    </ul>
+  </nav>
+  
+    <div class="gameContainer  mt-[20px] flex justify-center">
+      <!-- <div class="line bg-black w-[30vw] h-[3px]"></div> -->
+      <div class="container  gap-2  flex justify-center">
+        <div class="cont grid grid-rows-[repeat(3,10vw)] grid-cols-[repeat(3,10vw)] ">
+
+        <div class="box border-l-0 border-t-0  border-1 text-[8vw] cursor-pointer hover:bg-purple-300 flex justify-center items-center"><span class="boxtext"></span></div>
+        <div class="box border-t-0 border-1 text-[8vw] cursor-pointer hover:bg-purple-300 flex justify-center items-center"><span class="boxtext"></span></div>
+        <div class="box border-t-0 border-r-0 border-1 text-[8vw] cursor-pointer hover:bg-purple-300 flex justify-center items-center"><span class="boxtext"></span></div>
+        <div class="box border-l-0  border-1 text-[8vw] cursor-pointer hover:bg-purple-300 flex justify-center items-center"><span class="boxtext"></span></div>
+        <div class="box border-1 text-[8vw] cursor-pointer hover:bg-purple-300 flex justify-center items-center"><span class="boxtext"></span></div>
+        <div class="box border-r-0 border-1 text-[8vw] cursor-pointer hover:bg-purple-300 flex justify-center items-center"><span class="boxtext"></span></div>
+        <div class="box border-l-0 border-b-0 border-1 text-[8vw] cursor-pointer hover:bg-purple-300 flex justify-center items-center"><span class="boxtext"></span></div>
+        <div class="box border-b-0 border-1 text-[8vw] cursor-pointer hover:bg-purple-300 flex justify-center items-center"><span class="boxtext"></span></div>
+        <div class="box border-b-0 border-r-0 border-1 text-[8vw] cursor-pointer hover:bg-purple-300 flex justify-center items-center"><span class="boxtext"></span></div>
+      </div>
+        <div class="gameInfo ml-[40px]">
+          <h1 class="font-bold font-['Baloo_Bhaina_2'] text-3xl mb-3">Welcome To My TicTacToe</h1>
+           <div>
+             <span class="info font-bold">Turn fox X</span>
+             <button class="reset border border-black ml-[10px] px-[5px] text-[16px] bg-[#b9abb9] rounded-[5px] font-semibold">Reset</button>
+           </div>
+
+           <div class="imgbox w-0 overflow-hidden transition-all duration-1000 ease-in-out">
+            <img src="excited.gif" alt="" class="w-full h-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
